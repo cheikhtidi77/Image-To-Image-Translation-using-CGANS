@@ -246,6 +246,8 @@ transform = transforms.Compose([
 import torchvision
 dataset = torchvision.datasets.ImageFolder(dataset_path, transform=transform)
 
+#The remaining part is taken from https://github.com/mansdia/Pix2pix
+
 # UNQ_C2 (UNIQUE CELL IDENTIFIER, DO NOT EDIT)
 # GRADED CLASS: get_gen_loss
 def get_gen_loss(gen, disc, real, condition, adv_criterion, recon_criterion, lambda_recon):
